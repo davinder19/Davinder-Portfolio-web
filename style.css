@@ -115,6 +115,7 @@ h1{
     background:rgba(255,255,255); 
     border-radius: 20px;
     margin-right: 10px;
+    padding: 10px;
 }
 /***********************************Side nav icon*********************************************/
 ul{
@@ -669,11 +670,22 @@ footer i{
 footer i:hover{
     transform: scale(1.2);
 }
-
-.teacher,
-.school{
+.teacher a{
+    text-decoration: none;
+    display:inline-block;
+    font-size: 1rem;
     color: var(--secondary-color);
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.5s;
+    
+    
 }
+.teacher:hover a {
+    transform: scale(1);
+    
+}
+
 
 /* //////////////////other small devise///////////////////////////////////////////////////// */
 /* //////////////////other small devise///////////////////////////////////////////////////// */
@@ -684,7 +696,7 @@ footer i:hover{
         height: auto;
     }
     .main-header{
-        margin-top: 40px;   
+        font-size: 40px;   
       }
 #main h1{
         font-size: 30px;
