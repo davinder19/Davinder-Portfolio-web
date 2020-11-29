@@ -21,7 +21,7 @@ body{
     background: linear-gradient(to right, rgba(66, 64, 64, 0.8) 2%, rgba(255,255,225,0.1)), url(img/bbck.jpg) center center/cover no-repeat border-box;
     background-attachment: fixed;
     font-family: 'Dosis', sans-serif;
-    line-height: 1.6;
+    line-height: 1.3;
     
 }
 .mxwidth{
@@ -54,13 +54,19 @@ h1{
     color: var(--primary-color);
    
 }
+
+
 .main-header{
-    margin-top: 80px;   
+    margin-top: 80px; 
+    
+    
+    
   }
 .second-header {
     font-size: 20px;
     text-align:center;
     color:var(--bg-color); 
+    
 }
 .bottom-line{
     content: '';
@@ -103,6 +109,7 @@ h1{
 }
 #main h2{
     color: #fff;
+    font-family: 'roboto' sans-serif;
 }
 .colr{
     background:rgba(255,255,255); 
@@ -335,7 +342,11 @@ h3{
     font-size: 1rem;
     color: #fff;
     cursor: pointer;
-    
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+.skills-details-item:hover a{
+ transform: scale(1);
 }
 
 .skills-details-item i{
@@ -349,7 +360,7 @@ h3{
 /* ///////////////////////////////////////projects///////////////////////////////////////////////////// */
 #projects{
     width: 100%;
-    background-color: var(--option-bg);
+    background:linear-gradient(to left bottom, rgba(51, 51, 51,0.5) ,rgba(247, 241, 241, 0.5));
     height: auto;
     
 }
@@ -620,7 +631,10 @@ button{
     padding: 10px;
     outline: none;
     background-color: var(--primary-color);
+    font-size: 1rem;
     color:  #fff;
+    border: none;
+
 }
 .address-items{
     line-height: 1.8rem;
@@ -631,6 +645,9 @@ button{
     font-size: 3rem;
     margin-top: 1rem;;
 }
+.address-items{
+    font-size: 1rem;
+}
 footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,2fr));
@@ -639,6 +656,7 @@ footer{
     align-items: center;
     background: #333;
     border-top: 2px solid var(--secondary-color);
+    border-bottom: 5px solid var(--secondary-color);
     color: #fff;
 }
 .footer-items{
@@ -650,6 +668,11 @@ footer i{
 }
 footer i:hover{
     transform: scale(1.2);
+}
+
+.teacher,
+.school{
+    color: var(--secondary-color);
 }
 
 /* //////////////////other small devise///////////////////////////////////////////////////// */
@@ -664,7 +687,7 @@ footer i:hover{
         margin-top: 40px;   
       }
 #main h1{
-        font-size: 40px;
+        font-size: 30px;
     }
     #main h2{
         font-size:18px;
