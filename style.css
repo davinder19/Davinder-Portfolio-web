@@ -695,14 +695,26 @@ footer i:hover{
      
         height: auto;
     }
+    h1{
+        font-size: 30px;
+        color: var(--primary-color);
+       
+    }
+    
     .main-header{
-        font-size: 40px;   
+        font-size: 30px;   
       }
 #main h1{
         font-size: 30px;
     }
     #main h2{
         font-size:18px;
+    }
+    .colr{
+        
+        border-radius: 3px;
+        margin-right: 3px;
+        padding: 5px;
     }
 
     #projects{
