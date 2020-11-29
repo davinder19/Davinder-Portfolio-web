@@ -1,7 +1,7 @@
 :root{
-    --primary-color:rgb(202, 95, 76);
+    --primary-color:rgb(224, 79, 53);
    --secondary-color:rgb(65, 245, 236);
-   --sub-color:rgb(146, 146, 39);
+   --sub-color:rgb(185, 185, 27);
    --bg-color: rgb(245, 241, 241);
    --yellow-color:#768d33;
    --option-bg:#eef0ee;
@@ -33,7 +33,7 @@ body{
     height: 100%;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    scroll-snap-type: y  mandatory;
+    /* scroll-snap-type: y  mandatory; */
 }
 section{
     width: 100%;
@@ -149,6 +149,10 @@ i{
     padding: 10px;
     color:var(--secondary-color);
 }
+ul li a{
+    display: inline-block;
+    text-decoration: none;
+    }
 /* ul li:hover{
 background-color:  pink;
 transition:  0.5s;
@@ -157,18 +161,15 @@ transform: scale(1);
 ul li i:hover{
     transition:  0.5s;
     transform: scale(1);
+    color:var(--primary-color);
     /* transform: translate(-100px); */
 }
 .active{
- color:var(--primary-color);
+color:var(--primary-color);
 transition:  0.5s;
 transform: scale(1);
 }
-ul li a{
-    display: inline-block;
-    text-decoration: none;
-  
-}
+
 /*****************************************About Section************************************************/
 
 #about{
@@ -397,7 +398,7 @@ h3{
 .card-box-01{
     width: 100%;
     height: 100%;
-    background: url(img/bbck.jpg) center center/cover no-repeat border-box;
+    background: url(img/bgg.jpg) center center/cover no-repeat border-box;
     position: relative;
     transition:  all 0.6 ease-in;
 }
@@ -405,14 +406,14 @@ h3{
 .card-box-02{
     width: 100%;
     height: 100%;
-    background: url(img/bck.jpg) center center/cover no-repeat border-box;
+    background: url(img/app.jpg) center center/cover no-repeat border-box;
     position: relative;
     transition:  all 0.6 ease-in;
 }
 .card-box-03{
     width: 100%;
     height: 100%;
-    background: url(img/bgg.jpg) center center/cover no-repeat border-box;
+    background: url(img/portfolio.jpg) center center/cover no-repeat border-box;
     position: relative;
     transition:  all 0.6 ease-in;
 }
@@ -426,7 +427,7 @@ h3{
 .card-box-1{
     width: 100%;
     height: 100%;
-    background: url(img/bgg.jpg) center center/cover no-repeat border-box;
+    background: url(img/weather-app.jpg) center center/cover no-repeat border-box;
     position: relative;
     transition:  all 0.6 ease-in;
 }
@@ -438,7 +439,7 @@ h3{
 .card-box-2{
     width: 100%;
     height: 100%;
-    background: url(img/bck.jpg) center center/cover no-repeat border-box;
+    background: url(img/working.jpg) center center/cover no-repeat border-box;
     position: relative;
     transition:  all 0.6 ease-in;
 }
@@ -448,7 +449,7 @@ h3{
 .card-box-3{
     width: 100%;
     height: 100%;
-    background: url(img/bg.jpg) center center/cover no-repeat border-box;
+    background: url(img/progress.jpg) center center/cover no-repeat border-box;
     position: relative;
     transition:  all 1s ease-in;
 }
@@ -578,27 +579,78 @@ h3{
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////// */
 #contact{
-    background: green;
+    padding: 2rem;
+    background: rgba(51, 51, 51,0.6);
 }
 .items{
     max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px,2fr));
     margin: auto;
     grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
 }
 .item{
     width:100%;
-    height: 350px;
+    /* height: 350px; */
     overflow: hidden;
 }
-/* #skills{
-    background-color: rgb(0, 0, 0);
+.form-field{
+    display: flex;
+    flex-direction: column;
 }
-#projects{
-    background-color: rgb(0, 0, 0);
-} */
-
+input{
+    color: var(--primary-color);
+}
+.text-input{
+    margin-top: 1rem;
+    padding: 8px;
+    font-size: 1rem;
+    ;
+    
+}
+textarea{
+    height: 150px;
+    
+}
+button{
+    width: 50%;
+    margin-top: 1rem;
+    padding: 10px;
+    outline: none;
+    background-color: var(--primary-color);
+    color:  #fff;
+}
+.address-items{
+    line-height: 1.8rem;
+    color: var(--sub-color);
+}
+.address-items i{
+    line-height: 1.5rem;
+    font-size: 3rem;
+    margin-top: 1rem;;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,2fr));
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    border-top: 2px solid var(--secondary-color);
+    color: #fff;
+}
+.footer-items{
+    text-align: center;
+}
+footer i{
+    transform: scale(0.8);
+    font-size: 2.6rem;
+}
+footer i:hover{
+    transform: scale(1.2);
+}
 
 /* //////////////////other small devise///////////////////////////////////////////////////// */
 /* //////////////////other small devise///////////////////////////////////////////////////// */
@@ -607,11 +659,20 @@ h3{
     section{
         height: auto;
     }
+#main h1{
+        font-size: 40px;
+    }
+    #main h2{
+        font-size:18px;
+    }
 
     #projects{
         width: 100%;
         /* height: auto; */
         background-color: var(--option-bg);
+    }
+    .project-section{
+        padding: 5px;
     }
         
     .section-all-cards {
