@@ -657,8 +657,12 @@ footer i:hover{
 @media(max-width:60rem){
  
     section{
+     
         height: auto;
     }
+    .main-header{
+        margin-top: 40px;   
+      }
 #main h1{
         font-size: 40px;
     }
