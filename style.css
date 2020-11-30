@@ -766,5 +766,17 @@ footer i:hover{
         margin: auto;
     
     }
+    .address-items{
+        font-size: 12px;
+    }
+    .address-items i{
+        line-height: 1.5rem;
+        font-size: 2rem;
+        margin-top: 1rem;;
+    }
+    .footer-items h2{
+        font-size: 16px;
+        
+    }
 
 }
