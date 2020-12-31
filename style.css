@@ -400,7 +400,7 @@ h3{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
     grid-template-areas: "card-01 card-02 card-03"
-                          "card-1 card-2 card-3"  ;
+                          "card-2 card-3 card-1"  ;
     margin: auto;
     margin-top: 1rem;
 
@@ -760,9 +760,9 @@ footer i:hover{
         grid-template-areas:   "card-01 card-01 card-01"
                                 "card-02 card-02 card-02"
                                 "card-03 card-03 card-03"
-                                "card-1 card-1 card-1" 
-                                "card-2 card-2 card-2"  
-                                "card-3 card-3 card-3"  ;
+                                "card-2 card-2 card-2" 
+                                "card-3 card-3 card-3"  
+                                "card-1 card-1 card-1"  ;
         margin: auto;
     
     }
