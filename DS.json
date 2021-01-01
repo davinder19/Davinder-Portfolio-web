@@ -3,7 +3,7 @@
     "short_name": "D-DEV",
     "start_url": "/",
     "disply":"standalone",
-    "background_color": "#333",
+    "background_color": "#000",
     "description": "D-DEV Portfolio",
     "icon":[
         {
