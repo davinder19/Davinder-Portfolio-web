@@ -54,6 +54,9 @@ h1{
     color: var(--primary-color);
    
 }
+h2{
+    letter-spacing: 3px;
+}
 
 
 .main-header{
@@ -120,7 +123,7 @@ h1{
 /* /////////////////////////////////logo////////////////////////////////////////////////// */
 .logo{
     
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     /* background-color:rgb(187, 91, 74); */
@@ -382,7 +385,9 @@ h3{
 #projects{
     width: 100%;
     /* background:linear-gradient(to left bottom, rgba(51, 51, 51,0.5) ,rgba(247, 241, 241, 0.5)); */
-    background-color: rgba(65, 245, 236,0.6);;
+    background-color: rgba(65, 245, 236,0.6);
+    /* background-color: #52384A; */
+    
     height: auto;
     
 }
@@ -398,16 +403,23 @@ h3{
 .project-section h1{
     color:var(--primary-color);
 }
+.project-section h2{
+    margin-top: 0.3rem;
+    font-size: 1.3rem;
+    
+    color: #333;
+    
+}
 /* .project-section h2{
     color:#fff;
 } */
 .section-all-cards {
     width: 100%;
-    max-width: 75rem;
+    max-width: 80rem;
     display: grid;
     grid-template-rows: repeat(2,20rem);
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
+    grid-gap: 10px;
     grid-template-areas: "card-01 card-02 card-03"
                           "card-2 card-3 card-1"  ;
     margin: auto;
@@ -602,10 +614,10 @@ h3{
 .card-section:hover .overlay-top{
   transform: translateX(-100%) translateY(-100%);
 }
-.card-section:hover .overlay-top h1{
-    /* transform: scale(1);
-    opacity: 1; */
-  }
+/* .card-section:hover .overlay-top h1{
+     transform: scale(1);
+    opacity: 1; 
+  } */
 
 /* //////////////////education///////////////////////////////////////////////////// */
 
@@ -767,6 +779,9 @@ footer i:hover{
         font-size: 35px;
         color: var(--primary-color);
        
+    }
+    h2{
+        letter-spacing: 0;
     }
     
     .main-header{
