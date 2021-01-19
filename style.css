@@ -203,8 +203,6 @@ transform: scale(1);
 #about{
     
     /* background-color: var(--bg-color); */
-    /* background: linear-gradient(to right, rgba(66, 64, 64, 0.8) 2%, rgba(255,255,225,0.1)), url(img/bbck.jpg) center center/cover no-repeat border-box;
-    background-attachment: fixed; */
     padding: 1rem;
     justify-content: center;
     align-items: center;
@@ -682,16 +680,27 @@ h3{
 .form-field{
     display: flex;
     flex-direction: column;
+    align-items:center;
+     /* background-color: #555; */
+   /* padding:  1rem;; */
+    width: 100%;
 }
 input{
+    width: 80%;
     color: var(--secondary-color);
-    background-color: var(--sub-color);
-    border: none;
+    background-color: #333;
+    border: 2px solid var(--secondary-color);
+    border-radius: 100px;
+    /* box-shadow: 1px 2px 1px rgba(255,255,255,0.3); */
+    transform: scale(0.99);
 }
 input:focus{
     outline: none;
+    transform: scale(1);
+    
 }
 .text-input{
+    width: 80%;
     margin-top: 1rem;
     padding: 8px;
     font-size: 1rem;
@@ -700,7 +709,9 @@ input:focus{
 }
 textarea{
     height: 150px;
-    background-color: var(--sub-color);
+    background-color: #333;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     
 }
 textarea:focus{
@@ -719,7 +730,7 @@ button{
 }
 .address-items{
     line-height: 1.8rem;
-    color: var(--sub-color);
+    color: var(--bg-color);
 }
 .address-items i{
     line-height: 1.5rem;
