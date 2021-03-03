@@ -1,31 +1,33 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <title>D-Dev</title>
-    <link rel="stylesheet" href="tester.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="Portfolio" href="DS.json">
+    <meta name="theme-color" content="#000">
+    <link rel="short-cut icon" type="image/x-icon" href="use-logo1.png">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Roboto&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Pacifico&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    
+    <title>DS-Portfolio</title>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-contain">
-            <!-- <h2 class="logo"> -->
-                <!-- <a href="index.html" class="logo">D-DEV</a> -->
-                <a href="index.html" class="logo">D-DEV</a>
-            <!-- </h2> -->
-            <ul>
-             <li><a href="index.html" class="lia current">DEVELOPER</a></li>
-             <li><a href="tester.html" class="lia">TESTER</a></li>
-             <li><a href="network.html" class="lia">IT & SUPPORT</a></li>
-             
-             
-            </ul>
-            
-        </div>
-    </nav>
-    <div class="sidebar">
+    <div id="container">
+    <section id="main" class="hero">
+        <a href="index.html"><div class="logo">
+            <h2>D-DEV</h2>
+        </div></a>
+      
         <ul class= parents>
             <li><a href="#main"> <i class="fa fa-home active" aria-hidden="true"></i></a></li>
             <li><a href="#about"><i class="fa fa-user-circle" aria-hidden="true"></i>
@@ -36,42 +38,32 @@
             <li class="child"><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
             
         </ul>
-    </div>
-    <div id="main" class="hero">
-        <div class="container">
+        <!-- <div class="content"> -->
             <div class="content">
-                <h1 class="header-1">
-                   <span class="colr"> I'm</span> 'D' <span
-                       class="txt-type"
-                       data-wait="3000"
-                        data-words='["Davinder", "Designer", "Developer"]'
-                      ></span>
-                    </h1>
-                      <h2 class="mrg">Professional & Responsive website</h2>
-                      <div class="time-date">
-                         <div class="time"></div>
-                         <div class="date"></div>
-                      </div>
-                    
-               
-            </div>      
-      </div>
+                <h1>
+                <span class="colr"> I'm</span> 'D'
+                  <span
+                    class="txt-type"
+                    data-wait="3000"
+                    data-words='["Davinder", "Designer", "Developer"]'
+                  ></span>
+                </h1>
+            <h2 class="mrg">Professional & Responsive website</h2>
+           
     </div>
-    
-    
-    <!-- //////////////////////////////About/////////////////////////////////// -->
+    </section>
     <section>
         <div id="about">
         
-     <div class="about mxwidth"><h1 class=""> I'm Passionable In </h1>
-         <h2 class= "second-header">Web Development & Programming</h2>
-         <h2 class="second-header">Networking & Testing</h2>
+     <div class="about mxwidth"><h1 class="main-header"> I'm Passionable In </h1>
+         <h2 class= "mrg second-header">Web Development & Programming</h2>
+         <h2 class="mrg second-header">Networking & Testing</h2>
         <div class="about-content">
             <div class="about-content-1">
                 <i class="fa fa-laptop" aria-hidden="true"></i>
                 <h2>Front-end Web</h2>
           <p>Responsive Web Design</p>
-          <p>CSS Grid & Flexbox</p> 
+          <p>CSS Grid & Flexbox</p>
             </div> 
              <div class="about-content-1">
                 <i class="fa fa-code" aria-hidden="true"></i>
@@ -106,86 +98,18 @@
             <p>Short Code &n</p>
             <p>Fast Result</p>
             </div> 
-    
+  
      </div>
-    </div> 
-    
-    
-        </div>
-    </section>
-    <!-- /////////////////////////////////Projects-Section///////////////////////////////// -->
-<section id="projects">
-    <!-- <div class="contianer"> -->
-<div class="pro-heading">
-    <h1>Some Of My Work</h1>
-    <h2>Check my small projects</h2>
-    <h2>many more to come</h2>
-</div>
-    <div class="projects-contianer">
-        <article class="card">
-            <img src="img/bgg.jpg" alt="">
-            <div class="project-details"><h2>We b-Development</h2></div>
-            <h4>Details</h4>
-            <p>Responsive Front End Website Template for all devices </p>
-            <h4>Languages</h4>
-            <p>HTML5, CSS3, BootStrap, JavaScript</p>
-            <h3><a href="https://davinder19.github.io/rice-web/index.html" target="blank" class="own-btn mrg">Web-Temp</a></h3>
-          
-        </article>
-        <article class="card">
-            <img src="img/app.jpg" alt="">
-            <div class="project-details"><h2>BMI-Calculator</h2></div>
-            <h4>Details</h4>
-            <p>Enter your Gander, Age and Height and calculate weight, BMI, Protien</p>
-            <h4>Language</h4>
-              <p>HTML5, CSS3, JavaScript</p>
-            <h3><a href="https://davinder19.github.io/BMI-Calculator/" target="blank" class="own-btn mrg"> BMI-Calculator</a></h3>
-        </article>
-        <article class="card">
-            <img src="img/laugh.jpg" alt="">
-            <div class="project-details"><h2>Joke-Generator</h2></div>
-            <h4>Details</h4>
-            <p>Responsive Front End Website Template for all devices </p>
-            <h4>Languages</h4>
-            <p>HTML5, CSS3, BootStrap, JavaScript</p>
-            <h3><a href="https://davinder19.github.io/joke/" target="blank" class="own-btn mrg">Random-joke</a></h3>
-        </article>
-        <article class="card">
-            <img src="img/working.jpg" alt="">
-            <div class="project-details"><h2>Todo's</h2></div>
-            <h4>Details</h4>
-            <p>Responsive Front End Website Template for all devices </p>
-            <h4>Languages</h4>
-            <p>HTML5, CSS3, BootStrap, JavaScript</p>
-            <h3><a href="https://davinder19.github.io/todo/" target="blank" class="own-btn mrg"> Todo's -App</a></h3>
-        </article>
-        <article class="card">
-            <img src="img/portfolio.jpg" alt="">
-            <div class="project-details"><h2>Note-App</h2></div>
-            <h4>Details</h4>
-            <p>Responsive Front End Website Template for all devices </p>
-            <h4>Languages</h4>
-            <p>HTML5, CSS3, BootStrap, JavaScript</p>
-            <h3><a href="https://davinder19.github.io/Notes/" target="blank" class="own-btn mrg"> Note-App</a></h3>
-        </article>
-        <article class="card">
-            <img src="img/weather-app.jpg" alt="">
-            <div class="project-details"><h2>Qoute</h2></div>
-            <h4>Detials</h4>
-            
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis eveniet incidunt vitae, similique eos cupiditate quam exercitationem rerum provident officiis!</p>
-            <h3><a href="index.html" class="own-btn mrg" >Qoute</a></h3>
-        </article>
-    <!-- </div> -->
-</div>
+</div> 
 
-</section>    
-    <!-- ////////////////////////////////////skills/////////////////////////////////////////////////////// -->
-    <!-- ////////////////////////////////skills/////////////////////////////////////////////////////////// -->
+
+        </div>
+</section>
+<!-- ////////////////////////////////skills/////////////////////////////////////////////////////////// -->
 <section id="skills">
   
     <div class="skills-container mxwidth">
-        <h1> Technical Skills</h1>
+        <h1 class="main-header"> Technical Skills</h1>
         <!-- <div class="bottom-line"></div> -->
         
         <div class="skills-boxes">
@@ -235,115 +159,214 @@
 
 
 </section>
-<!-- ///////////////////////////////////////////////Eduction/////////////////////////////////////////////////////     -->
-<section id="education">
-        
-    <div class="education-section">
-        <h1 calss="main-header">My Education And Passoion</h1>
-    <div class="education">
-        <div class="edu"><a href="#">
-            <i class="fas fa-award"></i>
-            <h3>PGDCA</h3>
-        <h4>Punjab University</h4></a>
+<!-- ///////////////////////////////////////////////////////////////////////My Projects//////////////////        -->
+ <!-- //////////////////////card section///////////////////////////////////////////////// -->
+ <section id="projects">
+     <div class="project-section">
+    <h1>My Projects</h1>
+    <!-- <div class="bottom-line"></div> -->
+    <h2>Check Some Of My Work</h2>
+<!-- <div class="section-container"> -->
+    <div class="section-all-cards">
+        <div class="card-section card-01">
+            <a href="https://davinder19.github.io/rice-web/index.html" target="blank">
+                <div class=" card-box card-box-01">
+                        
+                    <div class="card-overlay">
+                        <div class="card-overlay-title">    
+                        <i class="fab fa-wordpress-simple"></i>
+                                 <h1>Front-end Web</h1>
+                                <p>Responsive web template</p>   
+                            </div> 
+                        <div class="overlay-top">
+                            <div class="card-overlay-content">
+                                <i class="fab fa-wordpress-simple"></i>
+                                 <h1>Front-end Web</h1>
+                                <p>Responsive web template</p>
+                            </div>
+                        
+                       
+                       </div>
+                       <!-- <div class="overlay-bottom">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, eum.</p>
+                        </div> -->
+                    </div>   
+                </div>
+            </a>
         </div>
-        <div class="edu"><a href=""><i class="fas fa-university"></i><h3>MSC-IT</h3> <h4>Punjab Technical University</h4></a></div>
-        <div class="edu"><a href="https://www.youracclaim.com/badges/98abfdfa-4450-42a0-9b4f-4a5018a5d30b" target="blank"><i class="fas fa-network-wired"></i><h3>CCNA</h3> <h4>Network Academy</h4></a></div>
-        <div class="edu"><a href="https://www.udemy.com/certificate/UC-PI2UA6SW/" target="blank"><i class="fas fa-laptop-code"></i><h3>DEV & TEST</h3> <h4>Udemy</h4></a></div>
-
-
-        
-        
-        
+        <div class="card-section card-02">
+            <a href="https://davinder19.github.io/BMI-Calculator/" target="blank">
+                <div class=" card-box card-box-02">
+                        
+                    <div class="card-overlay">
+                        <div class="card-overlay-title">    
+                            <i class="fas fa-calculator"></i>
+                            <h1>BMI-Calculator</h1>
+                           <p>Weight & BMI & Protien Check</p>  
+                                </div> 
+                            
+                        <div class="overlay-top">
+                            <div class="card-overlay-content">
+                                <i class="fas fa-calculator"></i>
+                                 <h1>BMI-Calculator</h1>
+                                <p>Weight & BMI & Protien Check</p>
+                                </div>
+                       
+                       </div>
+                       <!-- <div class="overlay-bottom">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, eum.</p>
+                        </div> -->
+                    </div>   
+                </div>
+            </a>
         </div>
-
-
-    </div>
-</section>
-    <!-- ///////////////////////////////////////////////Introduction///////////////////////////////////////////////// -->
-
-<section id="introduction">
-    <div class="introductio">
+        <div class="card-section card-03">
+            <a href="https://davinder19.github.io/joke/" target="blank">
+                <div class=" card-box card-box-03">
+                        
+                    <div class="card-overlay">
+                        <div class="card-overlay-title">    
+                            
+                                <i class="fas fa-grin-beam"></i>
+                                 <h1>Jokes</h1>
+                                <p>Don't Laugh Challenge</p>
+                                </div> 
+                        <div class="overlay-top">
+                            <div class="card-overlay-content">
+                                <i class="fas fa-grin-beam"></i>
+                                 <h1>Jokes</h1>
+                                <p>Don't Laugh Challenge</p>
+                                </div>
+                       
+                       </div>
+                       <!-- <div class="overlay-bottom">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, eum.</p>
+                        </div> -->
+                    </div>   
+                </div>
+            </a>
+        </div>
+        
+       <div class="card-section card-2">
+           <a href="https://davinder19.github.io/todo/" target="Blank">
+               <div class="card-box card-box-2">
+                   
+                   <div class="card-overlay">
+                    <div class="card-overlay-title">    
+                            
+                        <i class="fas fa-check-double"></i>
+                             <h1>Todos</h1>
+                            <p>Orgnize your work</p>
+                        </div> 
+                       <div class="overlay-top">
+                        <div class="card-overlay-content">
+                            <i class="fas fa-check-double"></i>
+                             <h1>Todos</h1>
+                            <p>Orgnize your work</p>
+                        </div>
+                       </div>
+                       <!-- <div class="overlay-bottom">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, eum.</p>
+                       </div> -->
+                   </div>   
+               </div>
+           </a>
+       </div>
+       <div class="card-section card-3">
+           <a href="https://davinder19.github.io/Notes/" target="blank">
+               <div class="card-box card-box-3">
+                   <div class="card-overlay">
+                    <div class="card-overlay-title">    
+                            
+                        <i class="fas fa-edit"></i>
+                        <h1>Notes</h1>
+                       <p>Take Notes</p>
+                        </div> 
+                       <div class="overlay-top">
+                        <div class="card-overlay-content">
+                            <i class="fas fa-edit"></i>
+                             <h1>Notes</h1>
+                            <p>Take Notes</p>
+                        </div>
+                       </div>
+                       <!-- <div class="overlay-bottom">
+                               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, eum.</p>
+                       </div> -->
+                   </div>   
+               </div>
+           </a>     
+       </div>
        
-        <!-- <div class="bottom-line"></div> -->
-    <div class="introduction-container">
-        <div class="intro-box intro-img">
-            <img src="img/profile.jpg" alt="">
-            
-        </div>
-        <div class="intro-box intro-2">
-            <h1>Davinder Singh</h1>
-             <p>davinder-web@gmail.com</p>
-            <p>Sacramento CA</p>
-            <h3>Working experience</h3>
-            <p> 9+ years experience working as a Plant Breeder Assistant </p>
-            <p>Looking for entry level IT Position for new Beginning</p>
-            <!-- <p>For More Info Download My Resume</p>
-            <a href="/Davinder_Web-developer.pdf" class="own-btn" download="click">Resume</a> -->
-            
-            
-        </div>
-
-    </div> 
-</div>
-    </section>
-       <!-- /////////////////////////////////Contact-section/////////////////////////////////////////////// -->
-       <section id="contact">
-        <div class="contact-section mxwidth">
-            <h1 class="main-header">Contact & My Resume</h1>
-            <div class="contact-section-parts mrg-big">
-            <div class="contact-section-1 cont-part-1"> 
-                <!-- <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"> -->
-                    <form action="mailto:davinder4885@gmail.com" enctype="text/plain" >
-        <div class="form-field">
-            <input type="text" class="text-input name-input" placeholder="Full Name" name="name" required>
-            <input type="email" class="text-input email-input" placeholder="Email Address" name="email" required>
-            <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" required>
-            <input type="text" class="text-input phone-input" placeholder="Subject" name="subject" required>
-            <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
-            <div class="mrg"></div>
-            <!-- <div data-netlify-recaptcha="true"></div> -->
-        </div>
-        <button class="own-btn">Submit</button>
-    </form>
-</div>
-            <div class="contact-section-1 cont-part-2">
-                <div class="address">
-                    <div class="address-item">
-                      <i class="far fa-address-card"></i>
-                      <h1>Davinder Singh</h1>
-                      <h3>Sacramento</h3>
-                      <h4>California</h4>
-                      <i class="far fa-envelope"></i>
-                      <h3>Email</h3>
-                      <h4>davinderweb01@gmail.com</h4>
-                    <i class="fas fa-file-download"></i>
-                         <h4>For More Deatils Download My Resume</h4>
-                        <h2> <a href="/Davinder_Web-developer.pdf" class="own-btn mrg" download="click">Developer-Resume</a></h2>
-                   </div> 
-                    <div class="address-ticket">
-                      <h3>D-DEV</h3>
-                    </div> 
-                 </div>
+       <div class="card-section card-1">
+        <a href="index.html">
+            <div class=" card-box card-box-1">
+                    
+                <div class="card-overlay">
+                    <div class="card-overlay-title">    
+                            
+                        <i class="fas fa-cloud-sun-rain"></i> 
+                        <h1>Weather</h1>
+                        <p>Under Development</p>
+                        </div>        
+                        
+                    <div class="overlay-top">
+                     <div class="card-overlay-content"> 
+                         <i class="fas fa-cloud-sun-rain"></i> 
+                         <h1>Weather</h1>
+                         <p>Under Development</p>
+                     </div>
+                   
+                   </div>
+                   <!-- <div class="overlay-bottom">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, eum.</p>
+                    </div> -->
+                </div>   
             </div>
-        </div>
+        </a>
     </div>
-    </section>
-<!-- ///////////////////////////////////////Footer/////////////////////////////////////////////////////////////     -->   
-<section id="footer"> 
-    <div class="message message-shownothing">
-        <h2>Hi</h2>
-        <h2>How's going</h2>
-        <h2>For more deatails</h2>
-        <h2>Download resume</h2>
+   </div>
+</div>  
+<!-- </div> -->
+</section>
 
-        <h2> <a href="/Davinder_Web-developer.pdf" class="own-btn mrg" download="click">Developer-Resume</a></h2>
-        <div class="btn-remove">
-            <div class="btn-remove-btn">
-            <div class="right"></div>
-            <div class="left"></div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  
+    
+<section id="contact"><h1>Contact Info</h1>
+ <div class="items">
+        <div class="item">
+
+        <form action="">
+            <div class="form-field">
+                <input type="text" class="text-input name-input" placeholder="Name">
+                <input type="text" class="text-input subject-input" placeholder="Subject">
+                <input type="email" class="text-input email-input" placeholder="Email Address">
+                <input type="text" class="text-input phone-input" placeholder="Phone Number">
+                <textarea class="text-input message-input" placeholder="Enter Message"></textarea>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
         </div>
-        </div>
+    
+   
+    <div class="item">
+        <div class="address-items">
+            <i class="far fa-envelope"></i>
+        <h2>Email</h2>
+          <h4>davinderweb01@gmail.com</h4>
+          <i class="fas fa-phone"></i>
+        <h2>Call</h2>
+        <h4>000-000-0000</h4>
+        <i class="far fa-address-card"></i>
+        <h2>Davinder Singh</h2>
+       <h4>Sacramento</h4>
+        <h4>California</h4>
+    </div>  
     </div>
+   
+</div>
+
+</section>
 <footer>
     <div class="footer-items">
     <h2>Let's Connect</h2>
@@ -359,11 +382,10 @@
     
     </div>
     <div class="footer-items">
-        <h4> My Sources <span class="teacher"> <a href="https://www.youtube.com/c/TraversyMedia/videos" target ="blank"> "Traversy Media" </a></span> & <span class="teacher"><a href="https://www.udemy.com/" target="blank"> Udemy.com</a></span></h4>
+        <h4>Special Thanks to <span class="teacher"> <a href="https://www.youtube.com/c/TraversyMedia/videos" target ="blank"> "Traversy Media" </a></span> & <span class="teacher"><a href="https://www.udemy.com/" target="blank"> Udemy.com</a></span></h4>
         
     </div>
-</footer> 
-</section>
-    <script src="nav.js"></script>
+</footer>
 </body>
+<script src="jscript.js"></script>
 </html>

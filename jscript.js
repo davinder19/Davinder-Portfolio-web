@@ -7,7 +7,14 @@ for (var i = 0; i < btns.length; i++) {
   current[0].className = current[0].className.replace("active", "");
   this.className += " active";
   });
-}
+}///////////////////////////navbar//////////////////////////////////
+var btns = document.getElementsByClassName("nav-container");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace("active", "");
+  this.className += " active";
+  });
 /////////////////////////////////Typing Effect///////////////////////////////////////
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
